@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0; padding:0;}
+.biti{ width:1000px; height:80px; margin:0 auto; border-bottom:2px solid #ccc;}
+.bti{ font-size:36px; height:80px; line-height:80px; text-align:center;}
+.bti a{ color:#494949; text-decoration:none; letter-spacing:1px;}
+.con{ width:1000px; height:auto; margin:10px auto;}
+.con ul{ list-style-type:none;}
+.con ul li{ width:1000px; height:auto; border-bottom:1px solid #ccc; line-height:30px;}
+.con ul li a{ font-size:12px;line-height:40px; color:#494949; margin:0 5px; text-decoration:none; }
+.con ul li .xm a{ font-size:14px; padding-bottom:10px; color:#06F; font-weight:bold;}
+h3{ border-bottom:1px solid #ccc; line-height:40px;}
+h3 a{ font-size:14px; padding-bottom:10px; color:#06F; text-decoration:none;}

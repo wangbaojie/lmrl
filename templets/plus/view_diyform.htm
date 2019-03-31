@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=<?php echo $cfg_soft_lang; ?>" />
+<title><?php echo $diy->name;?> - powered by dedecms</title>
+<link href="./img/nspage.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<div class="main mceneter">
+	<div class="toplogo">
+		<div class="logo">
+				<a href="/"><img src="<?php echo $cfg_templeturl; ?>/default/images/logo.gif" /></a>		</div>
+		<div class="title">
+			<a href='diy.php?action=list&diyid=<?php echo $diy->diyid; ?>'><?php echo $diy->name; ?></a>	&gt; 详细内容
+		</div>
+	</div>
+	<div class="cmain">
+		<div class="ctitle">
+			<h1><?php echo $diy->name;?>详细内容</h1>
+			<span></span>
+		</div>
+		<div class="cbox mceneter">
+			<div class="maplist">
+			<br />
+<table class='listtable' cellspacing="1">
+<?php
+echo '<tbody>';
+echo '<tr><td bgcolor="#eeeeee" width="20%">id</td><td bgcolor="#eeeeee">'.$row['id'].'</td></tr>';
+$allowhtml = array('htmltext');
+foreach($fieldlist as $field=>$fielddata)
+{
+	if($row[$field]=='') continue;
+	if($fielddata[1]=='img')
+	{
+			$row[$field] = "<a href='{$row[$field]}' target='_blank'><img src='{$row[$field]}'/></a>\r\n";
+	}
+	else if($fielddata[1]=='addon')
+	{
+			$row[$field] = "<a href='{$row[$field]}' target='_blank'><img src='img/addon.gif' border='0' /> 相关附件</a>";
+	}
+    
+    
+                      //联动类型显示修正开始 
+else if($fielddata[1]=='stepselect') 
+{ 
+$db->Execute('me',"SELECT * FROM `dede_stepselect` WHERE itemname='{$fielddata[0]}'"); 
+while($arr = $db->GetArray(me)) 
+{ 
+$egroup = $arr['egroup']; 
+} 
+$fields[$field] = Getenums("{$fields[$field]}",$egroup); 
+} 
+//联动类型显示修正结束  
+    
+    
+	else
+	{
+		if(!in_array($fielddata[1], $allowhtml))
+		{
+			$row[$field] = htmlspecialchars($row[$field]);
+		}
+	}
+	echo '<tr><td bgcolor="#ffffff">'.$fielddata[0].'</td><td bgcolor="#ffffff">'.$row[$field].'</td></tr>';
+}
+echo '</tbody>';
+?>
+</table>
+
+<?php 
+function Getenums($evalue=0,$egroup) 
+{ 
+if( !isset($GLOBALS['em_'.$egroup.'s']) ) 
+{ 
+$cachefile = DEDEDATA.'/enums/'.$egroup.'.php'; 
+if(!file_exists($cachefile)) 
+{ 
+require_once(DEDEINC.'/enums.func.php'); 
+WriteEnumsCache(); 
+} 
+if(!file_exists($cachefile)) 
+{ 
+return ''; 
+} 
+else 
+{ 
+require_once($cachefile); 
+} 
+} 
+if($evalue>=500) 
+{ 
+if($evalue % 500 == 0) 
+{ 
+return (isset($GLOBALS['em_'.$egroup.'s'][$evalue]) ? $GLOBALS['em_'.$egroup.'s'][$evalue] : ''); 
+} 
+else if (preg_match("#([0-9]{1,})\.([0-9]{1,})#", $evalue, $matchs)) 
+{ 
+$esonvalue = $matchs[1]; 
+$etopvalue = $esonvalue - ($esonvalue % 500); 
+$esecvalue = $evalue; 
+$GLOBALS['em_'.$egroup.'s'][$etopvalue] = empty($GLOBALS['em_'.$egroup.'s'][$etopvalue])? '' 
+: $GLOBALS['em_'.$egroup.'s'][$etopvalue]; 
+$GLOBALS['em_'.$egroup.'s'][$esonvalue] = empty($GLOBALS['em_'.$egroup.'s'][$esonvalue])? '' 
+: $GLOBALS['em_'.$egroup.'s'][$esonvalue]; 
+$GLOBALS['em_'.$egroup.'s'][$esecvalue] = empty($GLOBALS['em_'.$egroup.'s'][$esecvalue])? '' 
+: $GLOBALS['em_'.$egroup.'s'][$esecvalue]; 
+return $GLOBALS['em_'.$egroup.'s'][$etopvalue].' - '.$GLOBALS['em_'.$egroup.'s'][$esonvalue].' - '.$GLOBALS['em_'.$egroup.'s'][$esecvalue]; 
+} 
+else 
+{ 
+$elimit = $evalue % 500; 
+$erevalue = $evalue - $elimit; 
+$GLOBALS['em_'.$egroup.'s'][$erevalue] = empty($GLOBALS['em_'.$egroup.'s'][$erevalue])? '' 
+: $GLOBALS['em_'.$egroup.'s'][$erevalue]; 
+$GLOBALS['em_'.$egroup.'s'][$evalue] = empty($GLOBALS['em_'.$egroup.'s'][$evalue])? '' 
+: $GLOBALS['em_'.$egroup.'s'][$evalue]; 
+return $GLOBALS['em_'.$egroup.'s'][$erevalue].' - '.$GLOBALS['em_'.$egroup.'s'][$evalue]; 
+} 
+} 
+} 
+?> 
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="copyright mceneter">
+Powered by <a href="http://www.dedecms.com" target="_blank">DedeCMS</a> &copy; 2004-2009  <a href="http://www.desdev.cn" target="_blank">DesDev</a> Inc.
+</div>
+
+</body>
+</html>

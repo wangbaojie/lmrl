@@ -1,0 +1,1 @@
+<div class="slider-item">                <a href="javascript:;">                    <img src="[field:picname/]"> </a></div>

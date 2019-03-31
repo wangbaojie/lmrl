@@ -1,0 +1,156 @@
+﻿@charset "utf-8";
+#focus {
+	width: 1180px;
+	height: 320px;
+	overflow:hidden;
+	position:relative;
+	margin:0 auto;
+}
+#focus ul {
+	height: 320px;
+	position:absolute;
+}
+#focus ul li {
+	float:left;
+	width:1180px;
+	height:320px;
+	overflow:hidden;
+	position:relative;
+}
+#focus ul li img {
+	width: 1180px;
+	height:320px;
+}
+#focus ul li div {
+	position:absolute;
+	overflow:hidden;
+}
+#focus .btnBg {
+	position:absolute;
+	width:1180px;
+	height:20px;
+	left:0;
+	bottom:0;
+	background:#cbcbcb;
+}
+#focus .btn {
+	position:absolute;
+	width:562px;
+	height:10px;
+	padding:5px 10px;
+	right:0;
+	bottom:0;
+	text-align:right;
+}
+#focus .btn span {
+	display:inline-block;
+	_display:inline;
+	_zoom:1;
+	width:25px;
+	height:10px;
+	_font-size:0;
+	margin-left:5px;
+	cursor:pointer;
+	background:#fff;
+}
+#focus .btn span.on {
+	background:#fff;
+}
+.main .main_right .cateslist1 {
+	margin-top:12px;
+	overflow:hidden
+}
+.main .main_right .cateslist1 dl {
+	border:1px solid #d5d5d5;
+	border-radius:4px;
+	overflow:hidden;
+	_float:left
+}
+.main .main_right .cateslist1 dl dt {
+	background:url(../../images/tit1.gif) repeat-x;
+	height:32px;
+	padding-left:12px;
+	line-height:32px;
+	font-weight:bold;
+}
+.main .main_right .cateslist1 dl dd {
+	float:left;
+	margin: 12px 8px;
+	margin-left: 30px;
+	width: 185px;
+	display:inline;
+}
+.main .main_right .cateslist1 dl dd .img {
+	width:185px;
+	height:160px;
+}
+.main .main_right .cateslist1 dl dd .img img {
+	width:185px;
+	height:160px;
+	border:1px solid #d5d5d5;
+}
+.main .main_right .cateslist1 dl dd .img a:hover img {
+	border:#000 1px solid
+}
+.main .main_right .cateslist1 dl dd .txt {
+	height:30px;
+	line-height:30px;
+	text-align:center;
+}
+.hot {
+	overflow:hidden;
+	margin:20px;
+}
+.hot ul li {
+	height:180px;
+	line-height:22px;
+}
+.hot ul li img {
+	width:160px;
+	height:160px;
+}
+.zklist {
+	overflow:hidden;
+	margin-top:15px;
+	border: 1px solid #D5D5D5;
+	border-radius:4px;
+	font-family:"宋体";
+}
+.zklist-T {
+	background: url("../../images/tit1.gif") repeat-x scroll 0% 0% transparent;
+	height: 32px;
+	line-height: 32px;
+	font-weight: bold;
+	text-indent:12px;
+}
+.zklist-C {
+	overflow:hidden;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.zklist-C ul li {
+	width:45%;
+	height:25px;
+	line-height:25px;
+	overflow:hidden;
+	float:left;
+	margin-right:2%;
+	margin-left:2%;
+}
+.zklist-C ul li a {
+	float:left;
+	width:75%;
+}
+.zklist-C ul li span {
+	float:right;
+	text-align:right;
+}
+.tantou {
+	width:100%;
+	margin-top:15px;
+	margin-bottom:15px;
+}
+.tantou img {
+	width:100%;
+	height:auto;
+}

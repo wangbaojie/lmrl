@@ -1,0 +1,1 @@
+<a href="view.php?aid=[field:id/]" title="[field:title/]">[field:title/]</a>

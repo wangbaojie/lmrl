@@ -1,0 +1,151 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+    <meta name="format-detection" content="telephone=no" />
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+		<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+
+
+
+    <link href="/public/mobile/css/skins.css" rel="stylesheet" type="text/css" />
+
+    <link href="/public/mobile/css/prolist.css" rel="stylesheet" type="text/css" />
+
+    <link href="/public/mobile/css/common.css" rel="stylesheet" type="text/css" />
+    <link href="/public/mobile/css/news.css" rel="stylesheet" type="text/css" />
+
+    <link rel="apple-touch-icon-precomposed" href="images/common/touch-icon.png" />
+
+
+</head>
+
+<body>
+
+    <div class="main">
+{dede:include filename="header_m.htm"/}
+     
+
+        <div class="g-back">
+
+            <a href="javascript:history.go(-1);" class="u-bp f-fl"></a>
+
+        </div>
+
+    
+
+       
+
+ 
+
+        <h3 class="m-btit">
+
+            
+
+            当前位置：<a href="/m/">首页</a> > {dede:field.typename/}
+
+            </h3>
+
+<div class="m-con">
+
+            <!--新闻标题-->
+
+            <div class="u-mtit f-tc">
+
+                <h1 class="s-wc">{dede:field.title/}</h1>
+
+                <p>{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)"/}</p>
+
+            </div>
+
+            <!--新闻内容-->
+
+            <div id="content" class="m-mcon">
+
+               {dede:field.body/}
+
+            </div>
+
+
+            <div class="m-rec j-slide-np">             
+
+                    <h2 class="m-tit z-spe">热门推荐</h2>
+
+                
+
+                <div class="m-con">
+
+                    <div class="prev">
+
+                    </div>
+
+                    <div class="m-nowr">
+
+                        
+
+                            <p>
+
+
+                                {dede:arclist typeid='3' flag='p 'row=3 titlelen=60 orderby=pubdate}
+
+                                <a href="view.php?aid=[field:id/]" title="[field:title/]">
+
+                                    <img src="[field:litpic/]" title="[field:title/]"  />
+
+                                    [field:title/]</a>
+{/dede:arclist}
+
+                            </p>
+
+                        
+
+                    </div>
+
+                    <div class="next">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!--热点推荐-->
+
+            <div class="m-about">
+
+                <h2 class="m-tit z-spe s-wc">
+
+                    客户问答</h2>
+
+                <p class="list">
+
+                    {dede:arclist typeid='11' row=5 titlelen=60 orderby=pubdate}
+                    <a href="view.php?aid=[field:id/]" title="[field:title/]">[field:title/]</a>
+{/dede:arclist}
+
+
+
+
+                </p>
+
+            </div>
+
+        </div>
+        <footer class="g-ft">
+{dede:include filename="footer_m.htm"/}
+
+    </div>
+
+</body>
+<script type="text/javascript" src="/public/mobile/js/Jquery.js"></script>
+<script type="text/javascript" src="/public/mobile/js/Nsw_mobile.js"></script>
+<script type="text/javascript" src="/public/mobile/js/Tools.js"></script>
+</html>

@@ -1,0 +1,1 @@
+<a href="javascript:void(0);" ><li style="background-image: url(..[field:litpic/]);"></li></a>

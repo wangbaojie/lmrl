@@ -1,0 +1,2 @@
+<li><a href="" class="tu"><img src="/sink/images/pro01.jpg" alt=""></a><a href="/case/99687.html"
+                                                                                      class="wen">成功案例名称</a></li>

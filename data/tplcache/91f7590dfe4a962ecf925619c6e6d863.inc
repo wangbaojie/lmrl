@@ -1,0 +1,1 @@
+<li><a href="[field:arcurl/]"><img src="[field:litpic/]"><p><span>创业学员：[field:title/]</span><br>[field:shorttitle/]</span></p><b>[field:xxxl /]</b></a></li>

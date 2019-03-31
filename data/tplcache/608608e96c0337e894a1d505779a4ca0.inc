@@ -1,0 +1,1 @@
+<a href="view.php?aid=[field:id/]">        <div class="bei2">        <img src="[field:litpic/]" />        <h4>[field:title/]</h4>        <p>  [field:description function="cn_substr(@me,40)" /]...</p>        <div class="butbt"><a href="view.php?aid=[field:id/]">查看详情</a></div>    </div>    </a>

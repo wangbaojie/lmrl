@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>搜索结果_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link rel="stylesheet" type="text/css" href="/templates/css.css" />
+
+<!---------------JQ库--------------->
+
+<script type="text/javascript" src="/templates/fuderui/js/n/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="/templates/fuderui/js/n/kk.js"></script>
+</head>
+
+<body>
+<script type="text/javascript" src="/templates/fuderui/js/n/base.js"></script> 
+<script type="text/javascript" src="/templates/fuderui/js/n/lpp.js"></script> 
+
+<!--top--> 
+
+{dede:include filename="header.htm" /} 
+
+<!--nav--> 
+
+<!--search-->
+
+<div class="box">
+  <div id="search">
+    <div class="search_left">
+      {dede:include filename="sousuo.htm" /}
+    </div>
+    <div class="search_right">
+      <form  name="formsearch" action="/plus/search.php">
+        <input type="hidden" name="kwtype" value="0" />
+        <input name="q" type="text"  class="out font1"  id="search-keyword" value="请输入关键词搜索..." onfocus="if(this.value=='请输入关键词搜索...'){this.value='';}"  onblur="if(this.value==''){this.value='请输入关键词搜索...';}" />
+        <input class="btnn" type="submit" onclick="SiteSearch('/search.html', '#keywords');"  value="">
+      </form>
+    </div>
+  </div>
+</div>
+
+<!--search end-->
+
+<div class="">
+  <div class="main"> {dede:include filename="left.htm" /}
+    <div class="main_right">
+      <div class="sitemap"> 搜索 <strong>{dede:global name='keyword' function='RemoveXSS(@me)'/}</strong> 的结果</div>
+      <div class="content">
+        <ul class="newslist">
+          
+          <!--取得一个分页DataTable--> 
+          
+          {dede:list pagesize='10' titlelen='50' }
+          <li>
+            <div class="img"> <a href="[field:arcurl/]"> <img src="[field:litpic/]" /> </a></div>
+            <div class="txt">
+              <h2> <a href="[field:arcurl/]">[field:title/]</a></h2>
+              <p>[field:description function="cn_substr(@me,250)" /]… </p>
+            </div>
+          </li>
+          {/dede:list}
+        </ul>
+        <div class="flickr">{dede:pagelist listitem="info,index,end,pre,next,pageno" listsize="1"/} </div>
+      </div>
+      <div class="clear"> </div>
+    </div>
+  </div>
+</div>
+<div class="clearfloat"></div>
+
+<!--footer--> 
+
+{dede:include filename="footer.htm"/}
+</body>
+</html>

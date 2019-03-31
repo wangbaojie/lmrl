@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link rel="stylesheet" type="text/css" href="/templates/css.css" />
+<style>
+.content {
+	width:1024px;
+	margin:0 auto;
+}
+.map_main {
+	overflow:hidden;
+	border:solid 5px #F0F0F0;
+	margin:10px 0;
+	padding-bottom:37px;
+}
+.sitemap_con {
+	width:845px;
+	margin:0 auto;
+	color:#666!important;
+}
+.sitemap_con .map_top {
+	border-bottom:solid 1px #ccc;
+}
+.sitemap_con .map_top img {
+	float:left;
+}
+.site_r_link {
+	width:120px;
+	margin-top:45px;/*上边界根据需要进行调整*/
+	border:1px solid #cdcdcd;
+	background:#F8F8F8;
+	padding:5px 10px;
+	float:right;
+} /*网站地图，显示方式样式，上边界根据需要进行调整*/
+.site_plc {
+	background:url(img/ico27.gif) no-repeat 0 8px;
+	padding:5px 0;
+	text-indent:10px;
+}
+.sitemap_con h4 {
+	line-height:30px;
+}
+.b4 {
+	border:solid 1px #E0E0E0;
+}
+.b4 ul {
+	padding:0 11px;
+}
+.b4 li {
+	float:left;
+	line-height:25px;
+	width:164px;
+	white-space:nowrap;
+	overflow:hidden;
+}
+.sitemap_con a {
+	color:#666!important;
+}
+.b4 li a {
+	color:#666!important;
+}
+.b4 li a:hover {
+	color:#e86b00;
+}
+</style>
+</head>
+
+<body>
+{dede:include filename="header.htm"/}
+<div class="content">
+  <div class="map_main">
+    <div class="sitemap_con"> 
+      
+      <!--
+
+            <div class="map_top">
+
+            
+
+                <div class="site_r_link">
+
+                    <a href="/sitemap.html">HTML地图</a></div>
+
+                <div class="clear">
+
+                </div>
+
+            </div>
+
+            -->
+      
+      <div class="site_plc"> 您的位置：<a href="/">首页</a> > 网站地图</div>
+      <h4><a href="/" title="网站首页" target="_blank">网站首页</a></h4>
+      {dede:channelartlist typeid="top"}
+      <h4><a href="{dede:field name="typeurl"/}" title="{dede:field name="typename"/}" target="_blank">{dede:field name="typename"/}</a></h4>
+      <div class="b4">
+        <ul>
+          {dede:channel type="son"}
+          <li><a href="[field:typeurl/]" title="[field:typename/]" target="_blank">[field:typename/]</a></li>
+          {/dede:channel}
+        </ul>
+        <div class="clear"></div>
+      </div>
+      {/dede:channelartlist} </div>
+  </div>
+</div>
+<div class="clear"> </div>
+{dede:include filename="footer.htm"/}
+</body>
+</html>

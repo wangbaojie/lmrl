@@ -1,0 +1,1 @@
+<div class="na_b teacher"><a href="view.php?aid=[field:id /]" class="tu"><img src="[field:picname/]"/></a><a href="" class="wen">[field:title/]</a></div>

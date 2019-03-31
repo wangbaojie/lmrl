@@ -1,0 +1,446 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>{dede:field.title/}_{dede:field.keywords/}_{dede:global.cfg_webname/}</title>
+
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+
+<script type="text/javascript" src="/templates/fuderui/js/n/jquery-1.8.2.min.js"></script>
+
+<script type="text/javascript" src="/templates/fuderui/js/n/cloud-zoom.1.0.2.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="/templates/css.css" />
+
+
+
+<!---------------JQ库--------------->
+
+
+
+<script type="text/javascript" src="/templates/fuderui/js/n/kk.js"></script>
+
+</head>
+
+
+
+<body>
+
+<script type="text/javascript" src="/templates/fuderui/js/n/base.js"></script> 
+
+<script type="text/javascript" src="/templates/fuderui/js/n/lpp.js"></script> 
+
+
+
+<!--top--> 
+
+
+
+{dede:include filename="header.htm" /} 
+
+
+
+<!--nav-->
+
+
+
+<!--<div id="focus">-->
+
+  <!--<ul>-->
+
+    <!--{dede:arclist typeid='25'  row='5' }-->
+
+    <!--<li><a href="javascript:void(0);"> <img src="[field:litpic/]" /></a></li>-->
+
+    <!--{/dede:arclist}-->
+
+  <!--</ul>-->
+
+<!--</div>-->
+
+
+
+<!--search-->
+
+
+
+<div class="box">
+
+  <div id="search">
+
+    <div class="search_left">
+
+      {dede:include filename="sousuo.htm" /}
+
+    </div>
+
+    <div class="search_right">
+
+      <form  name="formsearch" action="/plus/search.php">
+
+        <input type="hidden" name="kwtype" value="0" />
+
+        <input name="q" type="text"  class="out font1"  id="search-keyword" value="请输入关键词搜索..." onfocus="if(this.value=='请输入关键词搜索...'){this.value='';}"  onblur="if(this.value==''){this.value='请输入关键词搜索...';}" />
+
+        <input class="btnn" type="submit" onclick="SiteSearch('/search.html', '#keywords');"  value="">
+
+      </form>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+<!--search end-->
+
+
+
+<div class="">
+
+  <div class="main"> {dede:include filename="left.htm" /}
+
+    <div class="main_right">
+
+      <div class="sitemap"> 当前位置：{dede:field name='position'/} </div>
+
+      <div class="content">
+
+        <div class="prohead">
+
+          <div class="hleft">
+
+            <div class="proimg zoom-small-image"> <a href='{dede:field.litpic/}' class='cloud-zoom' id='zoom1' rel="adjustX:10, adjustY:-4"> <img src='{dede:field.litpic/}' /></a> </div>
+
+            <div class="btns"> <a href="{dede:field.litpic/}" rel="img_group" class="b1" title="查看大图">查看大图</a> <span> <a href="{dede:field.litpic/}" rel="img_group"></a> </span> <a href="javascript:AddFavorite();" class="b2" title="加入收藏夹">加入收藏夹</a> <a href="javascript:docscroll('#pingjia');" class="b3" title="我要评价">我要评价</a> <a href="javascript:copyUrl();" class="b4" title="告诉朋友">告诉朋友</a> </div>
+
+          </div>
+
+          <div class="hright">
+
+            <div class="proinfo">
+
+              <h1>{dede:field.title/}</h1>
+
+              <p> 发布时间：{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)"/} </p>
+
+              <p> 作者：{dede:global.cfg_webname/}</p>
+
+			  <p> 同名相关词:{dede:field.tags/}</p>
+
+              <p> 推广地域:{dede:field.keywords/}</p>
+
+            </div>
+
+            <div class="tels"> 联系电话：<span style="font-size: 22px;">18291848484</span></div>
+
+            <div class="btns">
+
+              <div id="ckepop"> <span class="jiathis_txt">分享到：</span> <a class="jiathis_button_qzone"></a><a class="jiathis_button_tqq"> </a><a class="jiathis_button_tsina"></a><a class="jiathis_button_renren"></a><a class="jiathis_button_douban"> </a><a class="jiathis_button_taobao"></a><a class="jiathis_button_ujian"></a><a class="jiathis_button_fav"> </a><a class="jiathis_button_copy">复制</a> <a href="http://www.jiathis.com/share/?uid=90225"
+
+
+
+        class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"> 更多</a> <a class="jiathis_counter_style"></a> </div>
+
+              <script type="text/javascript">    var jiathis_config = { data_track_clickback: true };</script> 
+
+              <script type="text/javascript" src="http://v2.jiathis.com/code/jia.js?uid=1336353133859589" charset="utf-8"></script> 
+
+            </div>
+                                    <title="收藏"> <img src="/templates/fuderui/images/btn-fav.png" title="收藏" /></a> </div>
+
+          </div>
+
+          <div class="clear"> </div>
+
+        </div>
+
+        <div class="cateslist1">
+
+          <dl>
+
+            <dt>相关推荐</dt>
+
+            {dede:likeart titlelen='30' row='4'}
+
+            <dd>
+
+              <div class="img"> <a href="[field:arcurl /]"> <img src="[field:litpic/]" /></a></div>
+
+              <div class="txt"> <a href="[field:arcurl /]"> [field:title/]</a></div>
+
+            </dd>
+
+            {/dede:likeart}
+
+          </dl>
+
+        </div>
+
+        <div class="procontent">
+
+          <div class="tit">
+
+            <dl>
+
+              <dt>产品介绍</dt>
+
+              <dd> </dd>
+
+            </dl>
+
+          </div>
+
+          <div class="detail">
+
+            <p>{dede:field.body/}    {dede:field.content/}</p>
+
+            <div class="pagess"> <span>上一篇：{dede:prenext get='pre'/}</span> <span>下一篇：{dede:prenext get='next'/}</span> </div>
+
+            <div class="info_key"> <span>此文关键字：</span> {dede:field.tags/}</div>
+
+          </div>
+
+        </div>
+<div class="formbox">
+
+                <dl>
+
+     <dt style="font-size:12px;">{dede:global.cfg_webname/}</dt>
+
+ <dd>
+
+<div class="contactus">
+
+<p>
+
+   <img alt="" style="float: right" align="right" width="180" height="209"src="/templates/fuderui/images/201312282RXBL44LF6.gif"><br>
+
+    <strong>致力打造行业第一品牌追求完美奉献一流品质<br></strong>
+
+</p>
+
+<p>公司名称：{dede:global.cfg_webname/}</p>
+
+<p>全国咨询热线：18291848484</p>
+
+<p>邮箱：{dede:global.qq/}@qq.com</p>
+
+<p>地址：西安高新区</p>
+
+
+
+                        </div>
+
+                    </dd>
+
+                </dl>
+
+            </div>
+
+
+
+
+
+<style>.contactus p{font-size:14px;}</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="formbox" id="zixun">
+
+        <dl>
+
+          <dt style="font-size:12px;">在线咨询</dt>
+
+          <form action="/plus/diy.php" enctype="multipart/form-data" method="post">
+
+			<input type="hidden" name="action" value="post" />
+
+			<input type="hidden" name="diyid" value="1" />
+
+			<input type="hidden" name="do" value="2" />
+
+            <table width="100%" border="0" cellpadding="4" cellspacing="10" cellpadding="10" style="padding: 20px 0px 20px 150px;">
+
+            <tr>
+
+              <td class="style1"> 用户名： </td>
+
+              <td><input  name='name' id='name' type="text" class="input txt" datatype="*"  sucmsg=" " /></td>
+
+            </tr>
+
+            <tr>
+
+              <td class="style1"> 联系电话： </td>
+
+              <td><input name='tel' id='tel' type="text" class="input txt" datatype="*0-20" sucmsg=" " /></td>
+
+            </tr>
+
+            <tr>
+
+              <td class="style1"> 电子邮箱： </td>
+
+              <td><input name='email' id='email' type="text" class="input txt" /></td>
+
+            </tr>
+
+            <tr>
+
+              <td class="style1"> 内容： </td>
+
+              <td><input type="text" name="beizhu" id="beizhu" class="input txt" datatype="*" sucmsg=" "style="width: 350px; height: 80px; float: left;"></textarea></td>
+
+            </tr>
+
+            <tr>
+
+              <td rowspan="2" class="style1"><input type="submit" name="submit" value="提交" class="btn_submit" /></td>
+
+            </tr>
+
+            </table>
+
+            <input type="hidden" name="dede_fields" value="name,text;tel,text;email,text;beizhu,text" />
+
+            <input type="hidden" name="dede_fieldshash" value="5c3b23d1651f1b03d2a9441f35c6d250" />
+
+            <div class="clear"> </div>
+
+          </form>
+
+        </dl>
+
+      </div>
+
+      <div class="clear"> </div>
+
+      <div class="clear"> </div>
+
+      <div class="cateslist">
+
+        <dl>
+
+          <dt>相关产品</dt>
+
+          {dede:likeart titlelen='30' row='4'}
+
+          <dd>
+
+            <div class="img"> <a href="[field:arcurl /]"> <img src="[field:litpic/]" /></a></div>
+
+            <div class="txt"> <a href="[field:arcurl /]"> [field:title/]</a></div>
+
+          </dd>
+
+          {/dede:likeart}
+
+        </dl>
+
+      </div>
+
+      <div class="zklist">
+
+        <div class="zklist-T"> 相关新闻</div>
+
+        <div class="zklist-C">
+
+          <ul>
+
+            {dede:arclist typeid='12'  row='10' titlelen='60' }
+
+            <li><a href="[field:arcurl /]"> [field:title/]</a></li>
+
+            {/dede:arclist}
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+      </div>
+
+      <script type="text/javascript" src="/scripts/jquery/jquery.form.min.js"></script> 
+
+      <script type="text/javascript" src="/scripts/jquery/Validform_v5.3.2_min.js"></script> 
+
+      <script type="text/javascript" src="/scripts/lhgdialog/lhgdialog.js?skin=idialog"></script> 
+
+      <script type="text/javascript" src="/templates/fuderui/js/base.js"></script>
+
+
+
+      <link rel="stylesheet" href="/css/validate.css" />
+
+      <link type="text/css" rel="stylesheet" href="/css/pagination.css" />
+
+      <script type="text/javascript">
+
+
+
+        $(function () {
+
+
+
+            //初始化发表评论表单
+
+
+
+            AjaxInitForm('feedback_form', 'btnSubmit', 1);
+
+
+
+        });
+
+
+
+    </script>
+
+      <style type="text/css">
+        .style1 { width: 89px; }
+    </style>
+
+  
+
+
+
+<div class="clearfloat"></div>
+
+
+
+<!--footer--> 
+
+</div>
+
+{dede:include filename="footer.htm"/}
+
+</body>
+
+</html>

@@ -1,0 +1,2 @@
+INSERT INTO `dede_downloads` VALUES('d41d8cd98f00b204e9800998ecf8427e','0','847');
+INSERT INTO `dede_downloads` VALUES('bfa89e563d9509fbc5c6503dd50faf2e','0','3');
