@@ -143,7 +143,7 @@ h3 a{ color:#bb0000;}
 	font-family:"Microsoft YaHei";
 }
 .main .main_left {
-	float:right;
+	float:left;
 	width:200px;
 }
 .main .main_left .leftitem {
@@ -207,7 +207,7 @@ h3 a{ color:#bb0000;}
 	line-height:24px;
 }
 .main .main_right {
-	float:left;
+	float:right;
 	width:965px;
 	overflow:hidden;
 }

@@ -1,0 +1,67 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+    <meta name="format-detection" content="telephone=no" />
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+		<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+
+<link href="/templates/m_3006/css/skins.css" rel="stylesheet" type="text/css" />
+<link href="/templates/m_3006/Css/css_con.css" rel="stylesheet" type="text/css" />
+<link href="/templates/m_3006/Css/common.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+{dede:include filename="header_m.htm"/}
+     
+
+   
+<div class="main"> 
+
+
+
+  <div class="g-back"> <a href="javascript:history.go(-1);" class="u-bp f-fl"></a> </div>
+  <h3 class="m-btit">当前位置：<a href="/m/">首页</a>&nbsp;>&nbsp; {dede:field.typename/}</h3>
+  <div class="g-bd">
+    <div class="m-con-2">
+
+
+   {dede:list pagesize='5'}
+
+	  <a href="view.php?aid=[field:id/]" class="s-babg">
+      <dl class="prolistbgfa">
+        <dt><img src="[field:litpic/]" width="130" height="119" /></dt>
+        <h3 class="s-wc">[field:title/]</h3>
+        <p>[field:description function="cn_substr(@me,200)" /]...</p>
+        <span></span>
+        <div class="clear"></div>
+      </dl>
+      </a>
+
+{/dede:list}  
+
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="g-page f-tc">   {dede:pagelist listitem="info,index,end,pre,next,pageno,option" listsize="5"/} </div>
+
+
+
+</div>
+
+
+
+{dede:include filename="footer_m.htm"/}
+
+ 
+
+</body>
+</html>
