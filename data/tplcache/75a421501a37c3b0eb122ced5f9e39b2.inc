@@ -1,0 +1,1 @@
+<li style="background:url([field:litpic/]) center 0 no-repeat;"><a href="#" title="#"></a></li>

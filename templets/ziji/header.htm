@@ -8,6 +8,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="/sink/css/css.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="/sink/css/in.css" />
+  <style>
+*{ margin:0; padding:0; list-style:none;}
+img{ border:0;}
+
+.rides-cs {  font-size: 12px; background:#29a7e2; position: fixed; top: 250px; right: 0px; _position: absolute; z-index: 1500; border-radius:6px 0px 0 6px;}
+.rides-cs a { color: #00A0E9;}
+.rides-cs a:hover { color: #ff8100; text-decoration: none;}
+.rides-cs .floatL { width: 36px; float:left; position: relative; z-index:1;margin-top: 21px;height: 181px;}
+.rides-cs .floatL a { font-size:0; text-indent: -999em; display: block;}
+.rides-cs .floatR { width: 130px; float: left; padding: 5px; overflow:hidden;}
+.rides-cs .floatR .cn {background:#F7F7F7; border-radius:6px;margin-top:4px;}
+.rides-cs .cn .titZx{ font-size: 14px; color: #333;font-weight:600; line-height:24px;padding:5px;text-align:center;}
+.rides-cs .cn ul {padding:0px;}
+.rides-cs .cn ul li { line-height: 38px; height:38px;border-bottom: solid 1px #E6E4E4;overflow: hidden;text-align:center;}
+.rides-cs .cn ul li span { color: #777;}
+.rides-cs .cn ul li a{color: #777;}
+.rides-cs .cn ul li img { vertical-align: middle;}
+.rides-cs .btnOpen, .rides-cs .btnCtn {  position: relative; z-index:9; top:25px; left: 0;  background-image: url(http://demo.lanrenzhijia.com/2014/service1031/images/lanrenzhijia.png); background-repeat: no-repeat; display:block;  height: 146px; padding: 8px;}
+.rides-cs .btnOpen { background-position: 0 0;}
+.rides-cs .btnCtn { background-position: -37px 0;}
+.rides-cs ul li.top { border-bottom: solid #ACE5F9 1px;}
+.rides-cs ul li.bot { border-bottom: none;}
+</style>
 </head>
 <body>
 <!-- header -->
@@ -16,14 +39,14 @@
     <h1><a href=""><img src="/sink/images/logo.jpg" alt=""></a>
     </h1>
     <div class="logo-ad">
-      <span class="gh">换热领域一站式服务</span>
-      <span class="gh01">鲁明热力—全方位的售后服务</span>
+      <span class="gh">铸造换热行业领军企业</span>
+      <span class="gh01">为世界的供暖事业不懈努力</span>
     </div>
     <div class="tel">
       <div class="tel-l"></div>
       <div class="tel-r">
         <span class="qg">客户服务热线：</span>
-        <span class="qg01">400-000-0000</span>
+        <span class="qg01">029-83664543</span>
       </div>
     </div>
   </div>
@@ -39,8 +62,8 @@
       <li><a href="/cpzx/" title="">产品中心</a>
         <div class="erji_xiala1">
           <div class="daohang_xiala">
-            <i><a title="">全部产品</a></i>
-            <span><a href="/cpzx/hybpgs/" title="">恒压变频供水</a></span>
+          <!--  <i><a title="">全部产品</a></i> -->
+      
             <span><a href="/cpzx/bshrq/" title="">板式换热器</a></span>
             <span><a href="/cpzx/gkshrq/" title="">管壳式换热器</a></span>
             <span><a href="/cpzx/hrjz/" title="">换热机组</a></span>
@@ -52,7 +75,7 @@
           </div>
         </div>
       </li>
-      <li><a href="#" title="/yyly/">应用领域</a></li>
+      <li><a href="/yyly/" title="应用领域">应用领域</a></li>
       <li><a href="/cgal/" title="#">成功案例</a></li>
       <li><a href="/xwzx/" title="#">新闻中心</a>
         <div class="erji_xiala1">
@@ -86,9 +109,9 @@
 <div class="fullSlide">
   <div class="bd">
     <ul>
-      <li style="background:url(/sink/images/banner1.jpg) center 0 no-repeat;"><a href="#" title="#"></a></li>
-      <li style="background:url(/sink/images/banner2.jpg) center 0 no-repeat;"><a href="#" title="#"></a></li>
-      <li style="background:url(/sink/images/banner3.jpg) center 0 no-repeat;"><a href="#" title="#"></a></li>
+      {dede:arclist typeid='23' row='3''}
+      <li style="background:url([field:litpic/]) center 0 no-repeat;"><a href="#" title="#"></a></li>
+        {/dede:arclist}
     </ul>
   </div>
   <a class="prev" href="javascript:void(0)" title="prev"></a>

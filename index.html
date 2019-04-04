@@ -8,6 +8,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="/sink/css/css.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="/sink/css/in.css" />
+  <style>
+*{ margin:0; padding:0; list-style:none;}
+img{ border:0;}
+
+.rides-cs {  font-size: 12px; background:#29a7e2; position: fixed; top: 250px; right: 0px; _position: absolute; z-index: 1500; border-radius:6px 0px 0 6px;}
+.rides-cs a { color: #00A0E9;}
+.rides-cs a:hover { color: #ff8100; text-decoration: none;}
+.rides-cs .floatL { width: 36px; float:left; position: relative; z-index:1;margin-top: 21px;height: 181px;}
+.rides-cs .floatL a { font-size:0; text-indent: -999em; display: block;}
+.rides-cs .floatR { width: 130px; float: left; padding: 5px; overflow:hidden;}
+.rides-cs .floatR .cn {background:#F7F7F7; border-radius:6px;margin-top:4px;}
+.rides-cs .cn .titZx{ font-size: 14px; color: #333;font-weight:600; line-height:24px;padding:5px;text-align:center;}
+.rides-cs .cn ul {padding:0px;}
+.rides-cs .cn ul li { line-height: 38px; height:38px;border-bottom: solid 1px #E6E4E4;overflow: hidden;text-align:center;}
+.rides-cs .cn ul li span { color: #777;}
+.rides-cs .cn ul li a{color: #777;}
+.rides-cs .cn ul li img { vertical-align: middle;}
+.rides-cs .btnOpen, .rides-cs .btnCtn {  position: relative; z-index:9; top:25px; left: 0;  background-image: url(http://demo.lanrenzhijia.com/2014/service1031/images/lanrenzhijia.png); background-repeat: no-repeat; display:block;  height: 146px; padding: 8px;}
+.rides-cs .btnOpen { background-position: 0 0;}
+.rides-cs .btnCtn { background-position: -37px 0;}
+.rides-cs ul li.top { border-bottom: solid #ACE5F9 1px;}
+.rides-cs ul li.bot { border-bottom: none;}
+</style>
 </head>
 <body>
 <!-- header -->
@@ -16,14 +39,14 @@
     <h1><a href=""><img src="/sink/images/logo.jpg" alt=""></a>
     </h1>
     <div class="logo-ad">
-      <span class="gh">换热领域一站式服务</span>
-      <span class="gh01">鲁明热力—全方位的售后服务</span>
+      <span class="gh">铸造换热行业领军企业</span>
+      <span class="gh01">为世界的供暖事业不懈努力</span>
     </div>
     <div class="tel">
       <div class="tel-l"></div>
       <div class="tel-r">
         <span class="qg">客户服务热线：</span>
-        <span class="qg01">400-000-0000</span>
+        <span class="qg01">029-83664543</span>
       </div>
     </div>
   </div>
@@ -39,8 +62,8 @@
       <li><a href="/cpzx/" title="">产品中心</a>
         <div class="erji_xiala1">
           <div class="daohang_xiala">
-            <i><a title="">全部产品</a></i>
-            <span><a href="/cpzx/hybpgs/" title="">恒压变频供水</a></span>
+          <!--  <i><a title="">全部产品</a></i> -->
+      
             <span><a href="/cpzx/bshrq/" title="">板式换热器</a></span>
             <span><a href="/cpzx/gkshrq/" title="">管壳式换热器</a></span>
             <span><a href="/cpzx/hrjz/" title="">换热机组</a></span>
@@ -52,7 +75,7 @@
           </div>
         </div>
       </li>
-      <li><a href="#" title="/yyly/">应用领域</a></li>
+      <li><a href="/yyly/" title="应用领域">应用领域</a></li>
       <li><a href="/cgal/" title="#">成功案例</a></li>
       <li><a href="/xwzx/" title="#">新闻中心</a>
         <div class="erji_xiala1">
@@ -86,9 +109,10 @@
 <div class="fullSlide">
   <div class="bd">
     <ul>
-      <li style="background:url(/sink/images/banner1.jpg) center 0 no-repeat;"><a href="#" title="#"></a></li>
-      <li style="background:url(/sink/images/banner2.jpg) center 0 no-repeat;"><a href="#" title="#"></a></li>
-      <li style="background:url(/sink/images/banner3.jpg) center 0 no-repeat;"><a href="#" title="#"></a></li>
+      <li style="background:url(/uploads/190404/1-1Z4040913053A.jpg) center 0 no-repeat;"><a href="#" title="#"></a></li>
+<li style="background:url(/uploads/190404/1-1Z4040Z9153B.jpg) center 0 no-repeat;"><a href="#" title="#"></a></li>
+<li style="background:url(/uploads/190404/1-1Z4040ZR4615.jpg) center 0 no-repeat;"><a href="#" title="#"></a></li>
+
     </ul>
   </div>
   <a class="prev" href="javascript:void(0)" title="prev"></a>
@@ -105,13 +129,13 @@
     <div class="search-center">
         <div class="left">
             <span>大家都在搜：</span>
-            <a href="" title="#">恒压变频供水</a>
-            <a href="" title="#">恒压变频供水</a>
-            <a href="" title="#">恒压变频供水</a>
-            <a href="" title="#">恒压变频供水</a>
-            <a href="" title="#">恒压变频供水</a>
-            <a href="" title="#">恒压变频供水</a>
-            <a href="" title="#">恒压变频供水</a>
+            <a href="" title="#">板式换热器</a>
+            <a href="" title="#">管壳式换热器</a>
+            <a href="" title="#">换热机组</a>
+            <a href="" title="#">供水设备</a>
+            <a href="" title="#">水处理设备</a>
+            <a href="" title="#">水箱</a>
+            <a href="" title="#">散热器</a>
         </div>
         <div class="search-mid">
             <div class="form">
@@ -128,54 +152,47 @@
         <div class="pro-title" data-scroll-reveal="enter bottom and move 100px over 1.3s">
             <div class="left">
                 <span>产品分类：</span>
-                <a href="/cpzx/hybpgs/" title="#">恒压变频供水</a>
+               
                 <a href="/cpzx/bshrq/" title="#">板式换热器</a>
                 <a href="/cpzx/gkshrq/" title="#">管壳式换热器</a>
                 <a href="/cpzx/hrjz/" title="#">换热机组</a>
                 <a href="/cpzx/gssb/" title="#">供水设备</a>
                 <a href="/cpzx/sclsb/" title="#">水处理设备</a>
                 <a href="/cpzx/sx/" title="#">水箱</a>
+               <a href="/cpzx/srq/" title="#">散热器</a>
             </div>
             <a href="/cpzx/" class="more" title="#">+</a>
         </div>
         <ul data-scroll-reveal="enter bottom and move 100px over 1.3s">
-            <li><a href="/34.html" class="tu">
-                <img src="/uploads/allimg/190331/1-1Z331155T70-L.jpg" alt=""></a>
+            <li><a href="/24.html" class="tu">
+                <img src="/uploads/190404/1-1Z40410523W32.jpg" alt=""></a>
                 <div class="wen">
-                    <a href="/34.html" class="num01" title="#">热网加热器</a>
-                    <a href="/34.html" class="left">
+                    <a href="/24.html" class="num01" title="#">RV20容积式换热器</a>
+                    <a href="/24.html" class="left">
                         <img src="/sink/images/left.png" alt=""></a></div>
                 <div class="line"></div>
             </li>
-<li><a href="/33.html" class="tu">
-                <img src="/uploads/allimg/190331/1-1Z3311555270-L.jpg" alt=""></a>
+<li><a href="/83.html" class="tu">
+                <img src="/uploads/190404/1-1Z404100552404.jpg" alt=""></a>
                 <div class="wen">
-                    <a href="/33.html" class="num01" title="#">水箱自洁消毒器</a>
-                    <a href="/33.html" class="left">
+                    <a href="/83.html" class="num01" title="#">水平浮动盘管换热器</a>
+                    <a href="/83.html" class="left">
                         <img src="/sink/images/left.png" alt=""></a></div>
                 <div class="line"></div>
             </li>
-<li><a href="/32.html" class="tu">
-                <img src="/uploads/allimg/190331/1-1Z3311553130-L.jpg" alt=""></a>
+<li><a href="/22.html" class="tu">
+                <img src="/uploads/190331/1-1Z33114161Q49-lp.jpg" alt=""></a>
                 <div class="wen">
-                    <a href="/32.html" class="num01" title="#">组合式软化水设备</a>
-                    <a href="/32.html" class="left">
+                    <a href="/22.html" class="num01" title="#">高效双纹管换热器</a>
+                    <a href="/22.html" class="left">
                         <img src="/sink/images/left.png" alt=""></a></div>
                 <div class="line"></div>
             </li>
-<li><a href="/31.html" class="tu">
-                <img src="/uploads/allimg/190331/1-1Z3311550550-L.jpg" alt=""></a>
+<li><a href="/85.html" class="tu">
+                <img src="/uploads/allimg/190402/1-1Z4021000270-L.jpg" alt=""></a>
                 <div class="wen">
-                    <a href="/31.html" class="num01" title="#">智能综合全程水处理器</a>
-                    <a href="/31.html" class="left">
-                        <img src="/sink/images/left.png" alt=""></a></div>
-                <div class="line"></div>
-            </li>
-<li><a href="/30.html" class="tu">
-                <img src="/uploads/allimg/190331/1-1Z331154P90-L.jpg" alt=""></a>
-                <div class="wen">
-                    <a href="/30.html" class="num01" title="#">稳压膨胀机组</a>
-                    <a href="/30.html" class="left">
+                    <a href="/85.html" class="num01" title="#">换热机组</a>
+                    <a href="/85.html" class="left">
                         <img src="/sink/images/left.png" alt=""></a></div>
                 <div class="line"></div>
             </li>
@@ -187,19 +204,27 @@
                         <img src="/sink/images/left.png" alt=""></a></div>
                 <div class="line"></div>
             </li>
-<li><a href="/28.html" class="tu">
-                <img src="/uploads/190331/1-1Z3311426453V-lp.jpg" alt=""></a>
+<li><a href="/34.html" class="tu">
+                <img src="/uploads/allimg/190331/1-1Z331155T70-L.jpg" alt=""></a>
                 <div class="wen">
-                    <a href="/28.html" class="num01" title="#">板式换热机组</a>
-                    <a href="/28.html" class="left">
+                    <a href="/34.html" class="num01" title="#">热网加热器</a>
+                    <a href="/34.html" class="left">
                         <img src="/sink/images/left.png" alt=""></a></div>
                 <div class="line"></div>
             </li>
-<li><a href="/27.html" class="tu">
-                <img src="/uploads/190331/1-1Z331142445I9-lp.jpg" alt=""></a>
+<li><a href="/30.html" class="tu">
+                <img src="/uploads/allimg/190331/1-1Z331154P90-L.jpg" alt=""></a>
                 <div class="wen">
-                    <a href="/27.html" class="num01" title="#">二氧环氯发生器</a>
-                    <a href="/27.html" class="left">
+                    <a href="/30.html" class="num01" title="#">稳压膨胀机组</a>
+                    <a href="/30.html" class="left">
+                        <img src="/sink/images/left.png" alt=""></a></div>
+                <div class="line"></div>
+            </li>
+<li><a href="/26.html" class="tu">
+                <img src="/uploads/190331/1-1Z331142326461-lp.jpg" alt=""></a>
+                <div class="wen">
+                    <a href="/26.html" class="num01" title="#">生活热水设备</a>
+                    <a href="/26.html" class="left">
                         <img src="/sink/images/left.png" alt=""></a></div>
                 <div class="line"></div>
             </li>
@@ -212,64 +237,65 @@
     <div class="ad01-center">
         <span class="num01">鲁明热力·厂家直销·现货供应</span>
         <img src="/sink/images/adk.png" alt="">
-        <span class="num02">货源充足，种类丰富，供货及时，发货迅速</span>
+        <span class="num02">货源充足，种类丰富，专业安装，售后无忧</span>
         <span class="num03">全国服务热线：</span>
-        <span class="num04">400-000-0000</span>
-        <a href="" title="#">在线咨询</a>
+        <span class="num04">029-83664543</span>
+        <a href="tencent://message/?Menu=yes&uin=570154800&Service=300&sigT=45a1e5847943b64c6ff3990f8a9e644d2b31356cb0b4ac6b24663a3c8dd0f8aa12a595b1714f9d45" title="#">在线咨询</a>
     </div>
 </div>
 <!-- ys -->
 <div class="ys-box">
     <div class="ys-box01">
-        <div class="ys-title" data-scroll-reveal="enter left and move 100px over 1.3s"><h3>鲁明热力</h3><span>致力于给您提供性价比高的电缆桥架</span>
+        <div class="ys-title" data-scroll-reveal="enter left and move 100px over 1.3s"><h3>鲁明热力</h3><span>致力于给您提供高性价比的换热设备</span>
         </div>
         <div class="ys-center">
             <div class="ys-left" data-scroll-reveal="enter left and move 100px over 1.3s">
                 <ul class="ys-left-cen01">
                     <span class="ys-left-name">01</span>
                     <div class="ys-left-cen">
-                        <span>多年企业实力</span>
-                        <p>公司多年从事于解决换热领域内任何工况下的技术问题并提出合理的解决方案。</p>
+                        <span>换热设备一站式服务</span>
+                        <p>生产销售全系列换热设备，换热设备供货、安装、调试、运行一站式服务。 </p>
                     </div>
                 </ul>
                 <ul class="ys-left-cen02">
                     <span class="ys-left-name">02</span>
                     <div class="ys-left-cen">
-                        <span>专业研发设计团队</span>
-                        <p>经验丰富的研发设计团队根据客户的情况因地制宜制定个性化设计方案，专属定制完美设计方案。设计实力强。</p>
+                        <span>强大的核心技术团队</span>
+                        <p>总工程师在热力行业日益精进12年，擅长解决换热领域内任何工况下的技术难题。</p>
                     </div>
                 </ul>
-                <ul class="ys-left-cen03">
+               <ul class="ys-left-cen03">
                     <span class="ys-left-name">03</span>
                     <div class="ys-left-cen">
-                        <span>超高性价比</span>
-                        <p>多维度优化资源配置，为业主提供专业指导意见。材料配件一次到位，公司生产全系列换热设备提供换热一站式服务。 </p>
+                        <span>实操锤炼出的热力设计人员</span>
+                        <p>设计团队可以独立设计和优化各种采暖工况下的换热系统，为您提供精准放心的设计方案。</p>
                     </div>
                 </ul>
                 <ul class="ys-left-cen04">
                     <span class="ys-left-name">04</span>
                     <div class="ys-left-cen">
-                        <span>完善售后服务</span>
-                        <p>公司拥有完善的售前、售中和售后服务。不仅确保产品安装的质量，更保证了项目的完美交付，让客户后顾无忧。</p>
+                        <span>掌握核心技术的工程师</span>
+                        <p>开发研究换热领域内的核心智能控制系统、就地智能配电柜、远程控制平台。 </p>
                     </div>
                 </ul>
-                <ul class="ys-left-cen05">
+               <ul class="ys-left-cen05">
                     <span class="ys-left-name">05</span>
                     <div class="ys-left-cen">
-                        <span>完善售后服务</span>
-                        <p>公司拥有完善的售前、售中和售后服务。不仅确保产品安装的质量，更保证了项目的完美交付，让客户后顾无忧。</p>
+                        <span>专业安装的资质及施工团队</span>
+                        <p>在严格的质量管理体系下打造精品工程。</p>
                     </div>
                 </ul>
                 <ul class="ys-left-cen06">
                     <span class="ys-left-name">06</span>
                     <div class="ys-left-cen">
-                        <span>完善售后服务</span>
-                        <p>公司拥有完善的售前、售中和售后服务。不仅确保产品安装的质量，更保证了项目的完美交付，让客户后顾无忧。</p>
+                        <span>全方位多元化的售后服务团队</span>
+                        <p>彻底解决您的后顾之忧，为您提供安全放心的换热产品。
+</p>
                     </div>
                 </ul>
                 <span>联系电话</span>
-                <p>18981977592</p>
-                <a href="" title="在线留言">在线留言</a>
+                <p>029-83664543</p>
+                <a href="tencent://message/?Menu=yes&uin=570154800&Service=300&sigT=45a1e5847943b64c6ff3990f8a9e644d2b31356cb0b4ac6b24663a3c8dd0f8aa12a595b1714f9d45" title="在线留言">在线留言</a>
             </div>
             <img src="/sink/images/ysimg01.png" alt="" class="ysimg01"
                  data-scroll-reveal="enter right and move 100px over 1.3s">
@@ -328,9 +354,7 @@
     <div class="about-center">
         <h3>陕西鲁明热力设备工程有限公司</h3>
         <p>
-            　　<img alt="" src="/uploads/190331/1-1Z331115F52c.jpg" style="height: 1448px; width: 980px;" /><br />
-<img alt="" src="/uploads/190331/1-1Z331115934340.jpg" style="width: 980px; height: 1511px;" /><br />
-<img alt="" src="/uploads/190331/
+              山东济南鲁明新能源有限公司成立于2003年，公司位于济南泉城南郊，东西两侧有京沪铁路、104国道，京福高速贯穿南北交通十分便利，2011年扩资注册资金6080万元，占地面积16000平方米，建筑面积16500平方米，现有固定资产8600万元，职工460人，高级职称22人，中级职称62人，初级职称180人。2012年实现销售收入一亿玖千万元，利税1430万元，我公司是山东省技术监督局定点压力容器生产企业，是山东省锅炉压力容器协会理事单位，是省热能动力专业委员会集体会员单位，AAA级信用企业。农业部全面质量管理达标企业。
         </p>
         <a href="/gsjj/" title="">more+</a>
         <!-- 展示 -->
@@ -339,7 +363,19 @@
                 <span>公司展示</span><a href="/gsjj/gszs/" title="#">more+</a>
             </div>
             <ul>
-                
+                <li><a href="/59.html" class="tu"><img src="/uploads/allimg/190401/1-1Z4011009520-L.jpg" alt="厂房展示"></a><a
+                        href="/59.html" class="wen">厂房展示</a>
+                </li>
+<li><a href="/58.html" class="tu"><img src="/uploads/allimg/190401/1-1Z4011006260-L.jpg" alt="设备展示"></a><a
+                        href="/58.html" class="wen">设备展示</a>
+                </li>
+<li><a href="/57.html" class="tu"><img src="/uploads/allimg/190401/1-1Z4011005240-L.jpg" alt="设备展示"></a><a
+                        href="/57.html" class="wen">设备展示</a>
+                </li>
+<li><a href="/56.html" class="tu"><img src="/uploads/allimg/190401/1-1Z4011003370-L.jpg" alt="产品展示"></a><a
+                        href="/56.html" class="wen">产品展示</a>
+                </li>
+
             </ul>
         </div>
     </div>
@@ -354,17 +390,17 @@
         <div id="marquee1" class="marqueeleft">
             <div class="cjfm-cen">
                 <ul>
-                    <li><a class="pic" href="/40.html" title="#"><img src="/uploads/allimg/190331/1-1Z3311631290-L.jpg"></a>
-                        <a class="pic01" href="/40.html" title="#">换热机组智能控制系统软</a>
+                    <li><a class="pic" href="/75.html" title="#"><img src="/uploads/allimg/190401/1-1Z4011056490-L.jpg"></a>
+                        <a class="pic01" href="/75.html" title="#">营业执照</a>
                     </li>
-<li><a class="pic" href="/36.html" title="#"><img src="/uploads/allimg/190331/1-1Z3311621100-L.jpg"></a>
-                        <a class="pic01" href="/36.html" title="#">基于通用模组低压配电箱</a>
+<li><a class="pic" href="/76.html" title="#"><img src="/uploads/allimg/190401/1-1Z4011102190-L.jpg"></a>
+                        <a class="pic01" href="/76.html" title="#">开户许可证</a>
                     </li>
-<li><a class="pic" href="/35.html" title="#"><img src="/uploads/allimg/190331/1-1Z331161K90-L.jpg"></a>
-                        <a class="pic01" href="/35.html" title="#">软件著作权登记证</a>
+<li><a class="pic" href="/77.html" title="#"><img src="/uploads/allimg/190401/1-1Z4011110110-L.jpg"></a>
+                        <a class="pic01" href="/77.html" title="#">建筑企业资质</a>
                     </li>
-<li><a class="pic" href="/39.html" title="#"><img src="/uploads/allimg/190331/1-1Z331162T90-L.jpg"></a>
-                        <a class="pic01" href="/39.html" title="#">动力中心（泵站）远程控</a>
+<li><a class="pic" href="/98.html" title="#"><img src="/uploads/190403/1-1Z4031A955645.jpg"></a>
+                        <a class="pic01" href="/98.html" title="#">AAA级信用证书</a>
                     </li>
 
                 </ul>
@@ -435,24 +471,92 @@
             </ul>
             <ul>
                 <li class="top">
-                    
+                    <div class="left">
+                        <a href="/60.html" class="tu">
+                            <img src="/uploads/allimg/190401/1-1Z401101F90-L.png" alt="传热率比较高的板式换热"></a><a href="/60.html" class="wen">传热率比较高的板式换热</a>
+
+                    </div>
+
                     <div class="right">
-                        
+                        <dl><a href="/60.html" class="tu"><img src="/uploads/allimg/190401/1-1Z401101F90-L.png"></a>
+                            <a href="/60.html" class="wen">传热率比较高的板式换热</a>
+                            <p>西安换热器 、 换热机组厂家 、 智能换热机组 、 西安板式换热器 。 大家都比较公认传热率高...</p>
+                            <div class="time"><span>2019-04-01</span></div>
+                        </dl><dl><a href="/61.html" class="tu"><img src="/uploads/allimg/190401/1-1Z4011025160-L.jpg"></a>
+                            <a href="/61.html" class="wen">智能换热机组的工作原理</a>
+                            <p>智能换热机组 主要的用途就是供热高效、节能环保，以及各种需要换热的场所，例如工厂、学...</p>
+                            <div class="time"><span>2019-03-28</span></div>
+                        </dl>
                     </div>
                 </li>
                 <li class="bottom">
-                    
+                    <dl>
+                        <a href="/60.html" title="传热率比较高的板式换热">传热率比较高的板式换热</a>
+                        <p>04-01</p>
+                    </dl><dl>
+                        <a href="/61.html" title="智能换热机组的工作原理">智能换热机组的工作原理</a>
+                        <p>03-28</p>
+                    </dl><dl>
+                        <a href="/62.html" title="板式换热器运用领域">板式换热器运用领域</a>
+                        <p>03-20</p>
+                    </dl><dl>
+                        <a href="/63.html" title="供水设备的质量就是我们">供水设备的质量就是我们</a>
+                        <p>03-13</p>
+                    </dl><dl>
+                        <a href="/64.html" title="板式换热器选型以及清洗">板式换热器选型以及清洗</a>
+                        <p>01-22</p>
+                    </dl>
                 </li>
             </ul>
             <ul>
                 <li class="top">
-                    
+                    <div class="left">
+                        <a href="/72.html" class="tu">
+                            <img src="/uploads/allimg/190401/1_0401104J62564.png" alt="管壳式换热器的结构组成"></a><a href="/72.html" class="wen">管壳式换热器的结构组成</a>
+
+                    </div>
+
                     <div class="right">
-                        
+                        <dl><a href="/72.html" class="tu"><img src="/uploads/allimg/190401/1_0401104J62564.png"></a>
+                            <a href="/72.html" class="wen">管壳式换热器的结构组成</a>
+                            <p>换热器 是一种非常重要的换热设备，能够把热量从一种介质传递给另一种介质，在各种工业领...</p>
+                            <div class="time"><span>2019-04-01</span></div>
+                        </dl><dl><a href="/65.html" class="tu"><img src="/uploads/allimg/190401/1-1Z4011040010-L.png"></a>
+                            <a href="/65.html" class="wen">复合式换热站的工艺流程</a>
+                            <p>...</p>
+                            <div class="time"><span>2019-03-28</span></div>
+                        </dl>
                     </div>
                 </li>
                 <li class="bottom">
-                    
+                    <dl>
+                        <a href="/72.html" title="管壳式换热器的结构组成">管壳式换热器的结构组成</a>
+                        <p>04-01</p>
+                    </dl><dl>
+                        <a href="/65.html" title="复合式换热站的工艺流程">复合式换热站的工艺流程</a>
+                        <p>03-28</p>
+                    </dl><dl>
+                        <a href="/66.html" title="西安板式换热器构成及功">西安板式换热器构成及功</a>
+                        <p>03-20</p>
+                    </dl><dl>
+                        <a href="/67.html" title="减小换热器阻力的方法">减小换热器阻力的方法</a>
+                        <p>03-18</p>
+                    </dl><dl>
+                        <a href="/68.html" title="组合式不锈钢钢板水箱的">组合式不锈钢钢板水箱的</a>
+                        <p>03-15</p>
+                    </dl><dl>
+                        <a href="/69.html" title="西安换热器有关问题解答">西安换热器有关问题解答</a>
+                        <p>03-11</p>
+                    </dl><dl>
+                        <a href="/70.html" title="西安换热器：真空脱气机">西安换热器：真空脱气机</a>
+                        <p>02-20</p>
+                    </dl><dl>
+                        <a href="/71.html" title="选择西安板式换热器的小">选择西安板式换热器的小</a>
+                        <p>02-13</p>
+                    </dl><dl>
+                        <a href="/73.html" title="热水器中的换热器的作用">热水器中的换热器的作用</a>
+                        <p>01-23</p>
+                    </dl>
                 </li>
             </ul>
         </div>
@@ -460,7 +564,7 @@
 </div>
 
 
-﻿<!-- footer -->
+<!-- footer -->
 <div class="footer-box" data-scroll-reveal="enter bottom and move 100px over 1.7s">
     <div class="link-box">
         <img src="/sink/images/links.jpg" alt="友情链接">
@@ -474,20 +578,57 @@
 
         <ul>
             <li>Copyright &copy; 2019 陕西鲁明热力设备工程有限公司 版权所有</li>
-            <li>服务热线：400-000-0000</li>
-            <li>手       机：00000000000</li>
-            <li>邮       箱：000000000@qq.com</li>
+            <li>服务热线：029-83664543</li>
+            <li>手       机：13619288669</li>
+            <li>邮       箱：570154800@qq.com</li>
 
         </ul>
         <ol>
-            <dl>备案号： 陕ICP备********-*</dl>
-            <dl>联系人：*先生</dl>
-            <dl>公司地址：西安市经济开发区文景路凤城十二路十字向北200米路西中港国际B座2406室</dl>
+            <dl>备案号： 陕ICP备14001283号-1</dl>
+            <dl>联系人：梁经理</dl>
+            <dl>公司地址：西安市经开区凤城凤城十二路与文景路十字西北角中港国际B座2406室</dl>
         </ol>
         <p><img src="/sink/images/cade.jpg" alt="微信二维码"><span>微信二维码</span></p>
-        <p><img src="/sink/images/cade.jpg" alt="手机二维码"><span>手机二维码</span></p>
+        <p><img src="/sink/images/cade1.jpg" alt="手机二维码"><span>手机二维码</span></p>
+     
     </div>
+  <div style="magin：0 auto;color:#FFF;text-align:center;">技术支持：中天弘科技<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1276882783'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s23.cnzz.com/z_stat.php%3Fid%3D1276882783%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script></div>
 </div>
+ <!--代码部分begin-->
+<div id="floatTools" class="rides-cs" style="height:246px;">
+  <div class="floatL">
+  	<a id="aFloatTools_Show" class="btnOpen" title="查看在线客服" style="top:20px;display:block" href="javascript:void(0);">展开</a>
+  	<a id="aFloatTools_Hide" class="btnCtn" title="关闭在线客服" style="top:20px;display:none" href="javascript:void(0);">收缩</a>
+  </div>
+  <div id="divFloatToolsView" class="floatR" style="display: none;height:237px;width: 140px;">
+    <div class="cn">
+      <h3 class="titZx">在线客服</h3>
+      <ul>
+        <li><span>客服1</span> <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=200835900&site=qq&menu=yes"><img border="0" src="http://demo.lanrenzhijia.com/2014/service1031/images/online.png" alt="点击这里给我发消息" title="点击这里给我发消息"/></a> </li>
+        <li><span>客服2</span> <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=619609814&site=qq&menu=yes"><img border="0" src="http://demo.lanrenzhijia.com/2014/service1031/images/online.png" alt="点击这里给我发消息" title="点击这里给我发消息"/></a> </li>
+        <li><span>客服3</span> <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=394959514&site=qq&menu=yes"><img border="0" src="http://demo.lanrenzhijia.com/2014/service1031/images/online.png" alt="点击这里给我发消息" title="点击这里给我发消息"/></a> </li>
+        
+        <li style="border:none;"><span>电话：029-83664543</span> </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<script src="http://www.lanrenzhijia.com/ajaxjs/jquery.min.js"></script>
+<script>
+	$(function(){
+		$("#aFloatTools_Show").click(function(){
+			$('#divFloatToolsView').animate({width:'show',opacity:'show'},100,function(){$('#divFloatToolsView').show();});
+			$('#aFloatTools_Show').hide();
+			$('#aFloatTools_Hide').show();				
+		});
+		$("#aFloatTools_Hide").click(function(){
+			$('#divFloatToolsView').animate({width:'hide', opacity:'hide'},100,function(){$('#divFloatToolsView').hide();});
+			$('#aFloatTools_Show').show();
+			$('#aFloatTools_Hide').hide();	
+		});
+	});
+</script>
+<!--代码部分end-->
 <!-- js -->
 <script src="/sink/js/jquery.min.js"></script>
 <script src="/sink/js/jquery.SuperSlide.2.1.1.js"></script>

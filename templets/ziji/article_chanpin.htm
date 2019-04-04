@@ -118,74 +118,10 @@
 
         <div class="prohead">
 
-          <div class="hleft">
+        
+        
 
-            <div class="proimg zoom-small-image"> <a href='{dede:field.litpic/}' class='cloud-zoom' id='zoom1' rel="adjustX:10, adjustY:-4"> <img src='{dede:field.litpic/}' /></a> </div>
-
-            <div class="btns"> <a href="{dede:field.litpic/}" rel="img_group" class="b1" title="查看大图">查看大图</a> <span> <a href="{dede:field.litpic/}" rel="img_group"></a> </span> <a href="javascript:AddFavorite();" class="b2" title="加入收藏夹">加入收藏夹</a> <a href="javascript:docscroll('#pingjia');" class="b3" title="我要评价">我要评价</a> <a href="javascript:copyUrl();" class="b4" title="告诉朋友">告诉朋友</a> </div>
-
-          </div>
-
-          <div class="hright">
-
-            <div class="proinfo">
-
-              <h1>{dede:field.title/}</h1>
-
-              <p> 发布时间：{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)"/} </p>
-
-              <p> 作者：{dede:global.cfg_webname/}</p>
-
-			  <p> 同名相关词:{dede:field.tags/}</p>
-
-              <p> 推广地域:{dede:field.keywords/}</p>
-
-            </div>
-
-            <div class="tels"> 联系电话：<span style="font-size: 22px;">18291848484</span></div>
-
-            <div class="btns">
-
-              <div id="ckepop"> <span class="jiathis_txt">分享到：</span> <a class="jiathis_button_qzone"></a><a class="jiathis_button_tqq"> </a><a class="jiathis_button_tsina"></a><a class="jiathis_button_renren"></a><a class="jiathis_button_douban"> </a><a class="jiathis_button_taobao"></a><a class="jiathis_button_ujian"></a><a class="jiathis_button_fav"> </a><a class="jiathis_button_copy">复制</a> <a href="http://www.jiathis.com/share/?uid=90225"
-
-
-
-        class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"> 更多</a> <a class="jiathis_counter_style"></a> </div>
-
-              <script type="text/javascript">    var jiathis_config = { data_track_clickback: true };</script> 
-
-              <script type="text/javascript" src="http://v2.jiathis.com/code/jia.js?uid=1336353133859589" charset="utf-8"></script> 
-
-            </div>
-                                    <title="收藏"> <img src="/templates/fuderui/images/btn-fav.png" title="收藏" /></a> </div>
-
-          </div>
-
-          <div class="clear"> </div>
-
-        </div>
-
-        <div class="cateslist1">
-
-          <dl>
-
-            <dt>相关推荐</dt>
-
-            {dede:likeart titlelen='30' row='4'}
-
-            <dd>
-
-              <div class="img"> <a href="[field:arcurl /]"> <img src="[field:litpic/]" /></a></div>
-
-              <div class="txt"> <a href="[field:arcurl /]"> [field:title/]</a></div>
-
-            </dd>
-
-            {/dede:likeart}
-
-          </dl>
-
-        </div>
+      
 
         <div class="procontent">
 
@@ -193,7 +129,7 @@
 
             <dl>
 
-              <dt>产品介绍</dt>
+              <dt>{dede:field.title/}</dt>
 
               <dd> </dd>
 
@@ -232,11 +168,11 @@
 
 <p>公司名称：{dede:global.cfg_webname/}</p>
 
-<p>全国咨询热线：18291848484</p>
+<p>全国咨询热线：029-83664543</p>
 
 <p>邮箱：{dede:global.qq/}@qq.com</p>
 
-<p>地址：西安高新区</p>
+<p>地址：西安市经开区凤城凤城十二路与文景路十字西北角中港国际B座2406室</p>
 
 
 
@@ -368,7 +304,7 @@
 
           <ul>
 
-            {dede:arclist typeid='12'  row='10' titlelen='60' }
+            {dede:arclist typeid='6'  row='10' titlelen='60' }
 
             <li><a href="[field:arcurl /]"> [field:title/]</a></li>
 
