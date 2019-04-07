@@ -1,0 +1,7 @@
+INSERT INTO `dede_diyform1` VALUES('1','1','','','','','');
+INSERT INTO `dede_diyform1` VALUES('2','1','王宝杰','18291848484','415188827','123121234242','');
+INSERT INTO `dede_diyform1` VALUES('3','1','','','','','');
+INSERT INTO `dede_diyform1` VALUES('4','0','','','','','');
+INSERT INTO `dede_diyform1` VALUES('5','0','王宝杰','','415188827@qq.com','号讲故事快递费内部分工号百衲本 ','');
+INSERT INTO `dede_diyform1` VALUES('6','0','转发','18291848484','wbj@ziziv.com','首页提交','');
+INSERT INTO `dede_diyform1` VALUES('7','0','','','','','');
