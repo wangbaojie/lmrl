@@ -1,0 +1,16 @@
+{dede:include filename="header_m.htm"/}
+<div class="inhaul"><a href="/m/">首页</a> 
+  {dede:field.typename/}
+</div><!-- shizi -->
+<div class="bei1 lianxi">
+  <img style="width:100%" src="/public/mobile_new/images/We/lianxi.jpg">  
+  <h2>陕西鲁明热力设备工程有限公司</h2> 
+  <p>      
+    全国咨询热线：<br />
+    029-83664543   13619288669<br />  
+    QQ：570154800<br />    
+    QQ邮箱：570154800@qq.com<br /> 
+    地址： 西安市经开区凤城凤城十二路与文景路十字西北角中港国际B座2406室
+  </p>
+</div>
+{dede:include filename="footer_m.htm"/}

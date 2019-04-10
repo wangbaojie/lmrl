@@ -188,7 +188,7 @@ h1 a{display: block;width: 230px;height:55px;float: left;margin-right: 17px;marg
 .nav_xiala ul li a{ display:block; color:#fff; height:35px; line-height:35px; overflow: hidden;transition: .7s; }
 .nav_xiala ul li:hover{ -webkit-transition: all .7s; transition: all .7s;background:#fff;}
 .nav_xiala ul li:hover a{color:#2c6fcc;}
-.nav_xiala ul li:nth-child(1) { background:none; }
+/*.nav_xiala ul li:nth-child(1) { background:none; }*/
 
 /* ************************ */
 .nav_xiala .erji_xiala{  z-index:20; height:0px; visibility: hidden; opacity:0;  -webkit-transition: all .7s linear; transition: all .7s linear;
